@@ -12,7 +12,8 @@
   "scripts": {
     "start": "npx serve & yarn scss & yarn watch",
     "scss": "node-sass --watch ./src/scss -o ./src/css",
-    "build": "rm -rf ./public && mkdir ./public && cp ./src/index.html ./public && cp -r ./src/css ./public && cp -r ./src/js ./public "
+
+    "build": "rm -rf ./public && mkdir ./public && cp  -r ./src/index.html ./src/js ./src/css ./src/images ./public"
   },
   "license": "MIT",
   "private": false,
