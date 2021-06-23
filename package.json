@@ -5,10 +5,22 @@
   "main": "index.js",
   "repository": "https://github.com/lemamon/think-better",
   "author": {
-     "name": "lemamon",
-     "email": "demmarinho@gmail.com",
-     "url": "https://lemamon.dev"
+    "name": "lemamon",
+    "email": "demmarinho@gmail.com",
+    "url": "https://lemamon.dev"
+  },
+  "scripts": {
+    "start": "npx serve & yarn scss & yarn watch",
+    "scss": "node-sass --watch ./src/scss -o ./src/css",
+    "build": "rm -rf ./public && mkdir ./public && cp ./src/index.html ./public && cp -r ./src/css ./public && cp -r ./src/js ./public "
   },
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "gsap": "^3.7.0"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "rollup": "^2.52.2"
+  }
 }
