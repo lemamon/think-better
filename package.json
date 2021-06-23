@@ -1,0 +1,14 @@
+{
+  "name": "think-better",
+  "version": "1.0.0",
+  "description": "A website to think better",
+  "main": "index.js",
+  "repository": "https://github.com/lemamon/think-better",
+  "author": {
+     "name": "lemamon",
+     "email": "demmarinho@gmail.com",
+     "url": "https://lemamon.dev"
+  },
+  "license": "MIT",
+  "private": false
+}
